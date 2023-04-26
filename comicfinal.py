@@ -51,6 +51,7 @@ class Root(ThemedTk):
                               sticky=('n'))
         # Drop down
         self.comiclist = ttk.OptionMenu(self.mainframe, self.clicked,
+                                        comic_info[0].name,
                                         *[x.name for x in comic_info])
         self.comiclist.grid(row=1, column=2, sticky=('n', 'w'), pady=5)
         # Info Label for drop down
